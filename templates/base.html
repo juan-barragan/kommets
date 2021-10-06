@@ -1,0 +1,45 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+   	<title>{% block title %}www.kommets.com{% endblock %}</title>
+      <meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">  		
+  		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  		<link rel="stylesheet" type="text/css" href="{% static 'main.css' %}" />
+  		{% block head %}
+        {% endblock %}
+   </head>
+   <body id="myPage"> 
+   	<nav class="navbar navbar-default navbar-fixed-top">
+  			<div class="container">
+    			<div class="navbar-header">
+      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>                        
+      			</button>
+      			<a class="navbar-brand" href="/">Logo</a>
+    			</div>
+    			<div class="collapse navbar-collapse" id="myNavbar">
+      			<ul class="nav navbar-nav navbar-right">
+      				{% for link in links %}
+      					<li><a href="{{link.target}}">{{link.name}}</a></li>
+        		    {% endfor %}
+      			</ul>
+    			</div>
+  			</div>
+		</nav>
+   
+   {% block body %}{% endblock %}
+   </body>
+   <footer class="container-fluid text-center">
+    {% block toTop %}{%endblock %}
+    <p>Copyright 2016 Kommets.com</p>
+    </footer>
+</html>

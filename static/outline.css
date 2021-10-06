@@ -1,0 +1,25 @@
+html, body, {
+   margin: 0px;
+   padding: 0px;
+   height: 100%;
+   width: 100%;
+}
+#left {
+  			margin-top: 5%;
+  float:left;
+  width : 400px;
+  height: 400px
+}
+#right {
+	margin-top: 5%;
+  width : 400px;
+  height: 400px;
+  float:left;
+}
+
+#qscore {
+	margin-top: 5%;
+  width : 800px;
+  height: 500px;
+  float:left;
+}

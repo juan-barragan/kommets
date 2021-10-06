@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{%block title%}La mesure du risque des PME belges{%endblock%}
+
+{%block body%}
+
+<div class="jumbotron text-center">
+  <h1>Kommets</h1> 
+  <p>Nous sommes specialistes du scoring des PME belges</p> 
+  <form class="form-inline" action="scripts/outline.php" method="GET">
+    <input type="text" name="enterprise" class="form-control" size="40" placeholder="Identificateur Entreprise" required>
+    <button type="submit" class="btn btn-danger">Chercher</button>
+  </form>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+                <h2>À propos de Kommets</h2><br>
+      <h4>Béneficiez gratuitement du scoring sur plus de 4000 entreprises belges</h4><br>
+      <p>Notre mission c'est de vous proportionner un aperçu fiable du risque encouru lorsque vous vous interessez aux PME. Une analyse realisée à partir des techniques "big data" sur les données de la liasse fiscale.
+                </p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+{%endblock %}
