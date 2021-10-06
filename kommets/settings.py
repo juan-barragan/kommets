@@ -20,7 +20,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '9fy*&x@c=apq4x0)u+x1*ez0&pi0vs#q6u#zi+jxb&r*+%hh*&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -28,8 +27,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 #ALLOWED_HOSTS = ['kommets.com', 'www.kommets.com']
 ALLOWED_HOSTS = []
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = "315741303275-440ki78kfbri3pr49pc10a31e3k9ru5u.apps.googleusercontent.com"
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = "gF-1a3_w0t5h6Oejd3lgTvsn"
 SOCIAL_AUTH_GOOGLE_SCOPE = ['email', 'profile']
 
 ALLOWED_HOSTS = ['kommets.com', 'www.kommets.com']
